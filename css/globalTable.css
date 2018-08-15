@@ -7,14 +7,10 @@ table.globalTable {
     bottom: 0px;
     height: 200%;
     width: 100%;
+    table-layout:fixed;
 }
 
 tbody.globalContent {
     display: table-row-group;
-    background-color: white;
-}
-
-td.globalMargin {
-    width: 7%;
     background-color: white;
 }

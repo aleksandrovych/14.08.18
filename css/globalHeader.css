@@ -1,15 +1,14 @@
 
 
 .logo {
-    width: 50%;
-    height: 50%;
-    margin-left: -35px;
-    margin-right: 35px;
-}
+    max-width:10vw;
+    max-height:10vh;
+    min-width: 2vw;
+    min-height: 2vh;
 
-.globalHeaderFirstOffser {
-    margin-left: 3%;
-    margin-right: -3%
+    width:auto;
+    height: auto;
+    text-align: left;
 }
 
 .topbar {
@@ -17,22 +16,18 @@
     overflow: hidden;
     background-color: white;
     justify-content: space-between;
+    width: 23vw;
     display: flex;
-    width: 23%;
-
+    position: relative;
 }
 
 .topBarItem {
     min-width: 20px;
-    width: auto;
     height: 50px;
     border-style: none;
-    box-sizing: border-box;
     text-align: center;
     color: rgba(102, 102, 102, 1);
-    font-size: large;
-    display: flex;
-    align-items: center;
+    font-size: 1.25vw;
 }
 
 .topBarItem:active {
@@ -41,14 +36,10 @@
 }
 
 tr.globalHeader {
-    position: absolute;
-    height: 12vh;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    max-height: 12vh;
+    min-height: 5vh;
+    height: auto;
+    width: 100%;
     box-shadow: 0 4px 6px rgba(244, 244, 245, 1);
     background-color: white;
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
