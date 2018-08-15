@@ -1,0 +1,20 @@
+
+table.globalTable {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 200%;
+    width: 100%;
+}
+
+tbody.globalContent {
+    display: table-row-group;
+    background-color: white;
+}
+
+td.globalMargin {
+    width: 7%;
+    background-color: white;
+}
