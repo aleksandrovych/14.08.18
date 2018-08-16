@@ -1,16 +1,7 @@
 
 table.globalTable {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
+    display: table;
     height: 200%;
     width: 100%;
-    table-layout:fixed;
 }
 
-tbody.globalContent {
-    display: table-row-group;
-    background-color: white;
-}
