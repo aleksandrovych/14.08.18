@@ -18,3 +18,82 @@ form.container {
     grid-auto-flow: row;
     margin-bottom: 60px;
 }
+
+span.boldtextcell {
+    grid-area: boldtextcell;
+    color: rgb(102, 102, 102);
+    font-size: 1.6vw;
+}
+
+button.gridbutton {
+    grid-area: gridbutton;
+    background-color: rgb(76, 217, 101);
+    width: 5vw;
+    height: 4vh;
+    border-radius: 2vh;
+    outline: none;
+    color: white;
+    border: 0px;
+    justify-self: right;
+}
+
+button.doner {
+    grid-area: doner;
+    justify-self: right;
+    margin-right: -13px;
+    border: 0;
+    outline: 0;
+}
+
+span.regulartextcell {
+    grid-area: regulartextcell;
+    max-font-size: 1rem;
+    font-size: 0.9vw;
+    color: rgb(183, 183, 183);
+}
+
+span.mediumtextcell {
+    grid-area: mediumtextcell;
+    font-size: 1.1vw;
+    color: rgb(170, 170, 173);
+}
+
+span.smalltextcell {
+    grid-area: smalltextcell;
+    color: rgb(223, 223, 223);
+    font-size: 0.7vw;
+}
+
+button.undescoretextcell1 {
+    grid-area: undescoretextcell1;
+    color: rgb(107, 107, 107);
+    font-size: 0.8vw;
+    border: 0px;
+    outline: 0px;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+button.undescoretextcell2 {
+    grid-area: undescoretextcell2;
+    color: rgb(107, 107, 107);
+    font-size: 0.8vw;
+    border: 0px;
+    outline: 0px;
+    justify-content: left;
+    width: 130%;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+div.cellgrid {
+    display: grid;
+    grid-template-areas:
+            "boldtextcell boldtextcell boldtextcell gridbutton doner"
+            "regulartextcell regulartextcell regulartextcell regulartextcell  regulartextcell"
+            "mediumtextcell mediumtextcell mediumtextcell mediumtextcell mediumtextcell"
+            "smalltextcell undescoretextcell1 undescoretextcell1 undescoretextcell1 undescoretextcell2";
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+}
