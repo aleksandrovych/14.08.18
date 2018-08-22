@@ -14,20 +14,17 @@ function createList() {
 }
 
 function appendTemplate(template, newId, toElement) {
-    //alert(template)
     var myTemplate = template.html().trim();
-    alert(myTemplate)
     var myTemplateClone = $(myTemplate);
-    myTemplateClone.attr('id', newId).appendTo(toElement);
+    myTemplateClone.attr('id', newId).prependTo(toElement);
 }
 
-function append(fromHTML, templateWithId, byNewId, toElement) {
+function appendToHTML(fromHTML, templateWithId, byNewId, toElement) {
     var template = $.get(fromHTML, function (data) {
         var html = $.parseHTML(data);
         var tempContainer = $('<div style="display: none;">'+ data +'</div>');
         $(toElement).append(tempContainer);
         var templ = $(tempContainer).find(templateWithId);
-        alert(templ.html())
         appendTemplate(templ, byNewId, toElement)
         $(tempContainer).remove();
     })
