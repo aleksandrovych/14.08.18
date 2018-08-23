@@ -19,9 +19,6 @@
     </style>
 </head>
 <body style="margin: 0px;" onload="createList();">
-<script>
-    appendToHTML("header.html", "#topbar", "jobsTopBar", document.body);
-</script>
     <table class="globalTable">
         <tr class="globalHeader">
 
@@ -31,10 +28,10 @@
             </th>
             <th>
                 <div class="items">
-                    <button class="topBarItem" onclick="headerItemClicked(this)">Jobs</button>
-                    <button class="topBarItem">Candidates</button>
-                    <button class="topBarItem">Shorlist</button>
-                    <button class="topBarItem">My Profile<div id="redCircle"></div></button>
+                    <button class="topBarItem" style="max-height: 70px;" onclick="headerItemClicked(this)">Jobs</button>
+                    <button class="topBarItem" style="max-height: 70px;">Candidates</button>
+                    <button class="topBarItem" style="max-height: 70px;">Shorlist</button>
+                    <button class="topBarItem" style="max-height: 70px;">My Profile<div id="redCircle"></div></button>
                 </div>
             </th>
             <th style="text-align: right; white-space: nowrap; position: relative;">
@@ -57,13 +54,13 @@
                 <form style="width: 82vw; height: 12vh; text-align: left; padding-top: 4vh;">
                     <span style="font-size: 4.5vh; color: rgb(102, 102, 102); text-align: left; margin-top: 4vh; height: auto;">Jobs</span>
                     <div class="items" style="padding-top: 4vh; z-index: 1;">
-                        <button class="topBarItem" style="font-size: 1.5vw;">All Jobs</button>
-                        <button class="topBarItem" style="font-size: 1.5vw;">Active</button>
-                        <button class="topBarItem" style="font-size: 1.5vw;">Draft</button>
-                        <button class="topBarItem" style="font-size: 1.5vw;">Closed</button>
+                        <button class="topBarItem" style="font-size: 1.5vw; max-height: 70px;">All Jobs</button>
+                        <button class="topBarItem" style="font-size: 1.5vw; max-height: 70px;">Active</button>
+                        <button class="topBarItem" style="font-size: 1.5vw; max-height: 70px;">Draft</button>
+                        <button class="topBarItem" style="font-size: 1.5vw; max-height: 70px;">Closed</button>
                     </div>
-                    <hr style="margin-top: -1px; z-index: 999; margin-right: 200px; height: 0.5px; border-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                    <button style="max-width: 10vw; min-width: 8vw; width: 10vw; height: 50px; float: right; margin-top: -50px; white-space: pre-wrap; color: white; background-color: rgb(102, 102, 102); border-radius: 5px;  max-font-size: 1.3vw; min-font-size: 0.8vw; font-size: 1.3vw; border: 0px; outline: 0px;">Create job</button>
+                    <hr style=" z-index: 999; margin-right: 200px; height: 0.5px; border-bottom: 0px; margin-top: 5px; margin-bottom: 0px;">
+                    <button style="max-width: 10vw; min-width: 8vw; width: 10vw; height: 70px; float: right; margin-top: -70px; white-space: pre-wrap; color: white; background-color: rgb(102, 102, 102); border-radius: 5px;  max-font-size: 1.3vw; min-font-size: 0.8vw; font-size: 1.3vw; border: 0px; outline: 0px;">Create job</button>
 
                 </form>
 

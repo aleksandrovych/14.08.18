@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Header</title>
-</head>
-<body>
-<template id="topbar" >
-    <article style="width: 100%; height: 15vh; display: flex; align-items: center; justify-content: space-between; background-color: yellow;">
-        <header style="display: flex; float: left;">
-            <img src="resources/logo.png" class="logo">
-        </header>
-        <nav style="display: flex; float: left;">
-            <a href="index.html">Jobs</a>
-            <a href="index.html">Candidates</a>
-            <a href="index.html">Shorlist</a>
-            <a href="index.html">My Profile</a>
-        </nav>
-        <article style="display: flex; float: left;">
-            <section  style="display: flex;">
-                <img src="resources/envelop.png" class="resize">
-                <img src="resources/ring.png" class="resize">
+    <link rel="stylesheet" type="text/css" href="css/globalHeader.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="application/javascript" src="scripts/scripts.js"></script>
 
+</head>
+<body style="margin: 0px;">
+<template id="topbar" >
+    <article style="width: 100%; height: 15vh; display: flex; align-items: center; justify-content: space-around; background-color: white;">
+        <header style="display: flex; float: left; flex-grow: 1; flex-shrink: 1;">
+            <img src="resources/logo.png" class="logo" style="margin-left: 9vw;">
+        </header>
+        <nav style="display: flex; float: left; justify-content: start; align-items: center; flex-grow: 8; flex-shrink: 1;">
+            <a href="index.html" class="topBarItem">Jobs</a>
+            <a href="index.html" class="topBarItem">Candidates</a>
+            <a href="index.html" class="topBarItem">Shorlist</a>
+            <a href="index.html" class="topBarItem">My Profile</a>
+        </nav>
+        <article style="display: flex; float: left; flex-grow: 5; justify-content: space-between; align-items: center; flex-shrink: 1; margin-right: 9vw;">
+            <section  style="display: flex; align-items: center; justify-content: space-between; margin:0 -8vw; flex-shrink: 1;">
+                <img src="resources/envelop.png" class="thirtyperсent" style="flex-shrink: 1;">
+                <img src="resources/ring.png" class="thirtyperсent" style="flex-shrink: 1;">
             </section>
-            <section style="display: flex;">
-             <span style="flex-shrink: 15px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; flex-shrink: 2;">
+             <span style="flex-shrink: 15px;  margin:0 15px;">
                 <small style="font-size: 1.3vh; color: rgb(239, 239, 239);">Forbes</small>
                 <br/>
                 <strong style="font-size: 1.5vh; color: rgb(102, 102, 102);">Birdie Cummings</strong>
             </span>
-                <div style="background-color: rgb(239, 239, 239); width: 8.5vh; height: 8.5vh; border-radius: 4.25vh; flex-shrink: 0;"></div>
-                <span style="flex-shrink: 5;">&blacktriangledown;</span>
+                <div style="background-color: rgb(239, 239, 239); width: 8.5vh; height: 8.5vh; border-radius: 4.25vh; flex-shrink: 0;  margin:0 15px;"></div>
+                <span style="flex-shrink: 5;  ">&blacktriangledown;</span>
             </section>
         </article>
-        <article>
-            <hr style="border:none; width: 100%; height: 0px; margin-top: 0px; border-bottom: 1px solid rgba(244, 244, 245, 1); box-shadow: 0px 0px 3px 1px rgba(244, 244, 245, 1); margin: 20px 0px 0px 0px;">
+    </article>
+        <hr class="shadow" >
 </template>
+<script>
+    appendTemplate($("#topbar"), "topbartest", document.body)
+</script>
+
 </body>
 </html>

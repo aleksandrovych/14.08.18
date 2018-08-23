@@ -25,7 +25,6 @@ function appendToHTML(fromHTML, templateWithId, byNewId, toElement) {
         var tempContainer = $('<div style="display: none;">'+ data +'</div>');
         $(toElement).append(tempContainer);
         var templ = $(tempContainer).find(templateWithId);
-        appendTemplate(templ, byNewId, toElement)
         $(tempContainer).remove();
     })
 }
