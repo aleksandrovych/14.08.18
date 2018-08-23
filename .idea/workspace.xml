@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b3c263-4a3c-49c3-b49c-eea6ca7d8448" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/globalHeader.css" afterPath="$PROJECT_DIR$/css/globalHeader.css" />
-      <change beforePath="$PROJECT_DIR$/css/globalTable.css" afterPath="$PROJECT_DIR$/css/globalTable.css" />
-      <change beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
+      <change beforePath="$PROJECT_DIR$/css/gridLayout.css" afterPath="$PROJECT_DIR$/css/gridLayout.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
@@ -144,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridLayout.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gridLayout.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/gridLayout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="45">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -226,7 +221,6 @@
         <option value="$PROJECT_DIR$/globalTable.css" />
         <option value="$PROJECT_DIR$/css/globalFooter.css" />
         <option value="$PROJECT_DIR$/script/scripts.js" />
-        <option value="$PROJECT_DIR$/css/gridLayout.css" />
         <option value="$PROJECT_DIR$/css/header.html" />
         <option value="$PROJECT_DIR$/jobs.html" />
         <option value="$PROJECT_DIR$/header.html" />
@@ -234,6 +228,7 @@
         <option value="$PROJECT_DIR$/css/globalTable.css" />
         <option value="$PROJECT_DIR$/css/globalHeader.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/gridLayout.css" />
       </list>
     </option>
   </component>
@@ -339,12 +334,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534254875865</updated>
       <workItem from="1534254878023" duration="69519000" />
-      <workItem from="1534931407445" duration="25422000" />
+      <workItem from="1534931407445" duration="25474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94941000" />
+    <option name="totallyTimeSpent" value="94993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,14 +543,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/gridLayout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -669,6 +656,14 @@
             <element signature="n#style#0;n#tr#3;n#table#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#tr#4;n#table#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/gridLayout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
