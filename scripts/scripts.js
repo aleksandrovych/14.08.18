@@ -10,7 +10,6 @@ function createList() {
         var item = document.querySelector("#templateitem")
         grid.appendChild(item.content.cloneNode(true));
     }
-
 }
 
 function appendTemplate(template, newId, toElement) {
@@ -27,4 +26,19 @@ function appendToHTML(fromHTML, templateWithId, byNewId, toElement) {
         var templ = $(tempContainer).find(templateWithId);
         $(tempContainer).remove();
     })
+}
+
+function  provideHeader(forDocument) {
+    var localDocument = forDocument.currentScript.ownerDocument;
+    alert(localDocument);
+    var tmpl = localDocument.getElementById('topbar');
+    var HeaderProto = Object.create(HTMLElement.prototype);
+    HeaderProto.createdCallback = function() {
+        var root = this.attachShadow({mode: 'open'});
+        root.appendChild(tmpl.content.cloneNode(true));
+    };
+
+    forDocument.registerElement('ui-header', {
+        prototype: HeaderProto
+    });
 }
