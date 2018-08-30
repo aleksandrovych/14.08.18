@@ -18,6 +18,13 @@ function appendTemplate(template, newId, toElement) {
     myTemplateClone.attr('id', newId).prependTo(toElement);
 }
 
+function addNextSibling(fromHTML, toElementWithId) {
+    var template = $.get(fromHTML, function (data) {
+        var html = $.parseHTML(data);
+        $('head').prepend(html);
+    });
+}
+
 function appendToHTML(fromHTML, templateWithId, byNewId, toElement) {
     var template = $.get(fromHTML, function (data) {
         var html = $.parseHTML(data);
@@ -30,7 +37,6 @@ function appendToHTML(fromHTML, templateWithId, byNewId, toElement) {
 
 function  provideHeader(forDocument) {
     var localDocument = forDocument.currentScript.ownerDocument;
-    alert(localDocument);
     var tmpl = localDocument.getElementById('topbar');
     var HeaderProto = Object.create(HTMLElement.prototype);
     HeaderProto.createdCallback = function() {

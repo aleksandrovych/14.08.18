@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 
 .logo {
     max-width:10vw;
@@ -79,3 +79,7 @@ img.thirtyperсent {
     min-height: 5%;
     object-fit: fill;
 }
+
+ :host {
+     display: block;
+ }
